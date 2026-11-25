@@ -377,8 +377,8 @@ export default function App() {
                   GEO-код страны
                   <input
                   required
-                  readOnly
                   value={geo}
+                  onChange={(event) => setGeo(event.target.value.toUpperCase())}
                   placeholder="Сначала выберите оффер"
                 />
                 </label>
